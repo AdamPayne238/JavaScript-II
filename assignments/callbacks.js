@@ -23,15 +23,28 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   });
 
 */
+// function add(num1, num2){
+//   return num1 + num2;
+// }
 
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  return cb(arr.length);
 }
+getLength(items, (length)=>{
+  console.log(length);
+});
+//done
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  return cb(arr[items.length -1])
 }
+last(items, (last)=>{
+  console.log(last)
+});
+//done
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
