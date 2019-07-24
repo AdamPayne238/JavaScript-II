@@ -1,5 +1,13 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+var me = "Adam Payne"
+function sayHello(){
+  console.log("Hello, " + me + "!")
+}
+sayHello();
+
+//break
+// Pair Program Closure
 let num1 = 2
 let num3 = 4
 function mutladd(num2){
@@ -10,7 +18,6 @@ function mutladd(num2){
     return ret2;
   }
 }
-
 let answer = mutladd(num1);
 console.log(answer);
 
@@ -24,6 +31,10 @@ const counter = () => {
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
+const ticketPriceTotal = runners.reduce((accumulator, currentItem)=>{
+  return accumulator + currentItem.donation;
+}, 0);
+console.log(ticketPriceTotal);
 
 // ==== Challenge 3: Create a counter function with an object that can increment and decrement ====
 const counterFactory = () => {
